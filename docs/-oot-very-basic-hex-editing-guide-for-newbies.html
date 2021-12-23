@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope="" itemtype="http://schema.org/WebPage">
+
+<!-- Mirrored from sites.google.com/site/n64mods/tutorials-1/-oot-very-basic-hex-editing-guide-for-newbies by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 22 Dec 2021 23:40:35 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { /*
+
+Copyright The Closure Library Authors.
+SPDX-License-Identifier: Apache-2.0
+*/
+(function(){function e(g){this.t={};this.tick=function(h,k,f){this.t[h]=[void 0!=f?f:(new Date).getTime(),k];if(void 0==f)try{window.console.timeStamp("CSI/"+h)}catch(m){}};this.getStartTickTime=function(){return this.t.start[0]};this.tick("start",null,g)}var a;if(window.performance)var d=(a=window.performance.timing)&&a.responseStart;var l=0<d?new e(d):new e;window.jstiming={Timer:e,load:l};if(a){var b=a.navigationStart;0<b&&d>=b&&(window.jstiming.srt=d-b)}if(a){var c=window.jstiming.load;0<b&&d>=
+b&&(c.tick("_wtsrt",void 0,b),c.tick("wtsrt_","_wtsrt",d),c.tick("tbsd_","wtsrt_"))}try{a=null,window.chrome&&window.chrome.csi&&(a=Math.floor(window.chrome.csi().pageT),c&&0<b&&(c.tick("_tbnd",void 0,window.chrome.csi().startE),c.tick("tbnd_","_tbnd",b))),null==a&&window.gtbExternal&&(a=window.gtbExternal.pageT()),null==a&&window.external&&(a=window.external.pageT,c&&0<b&&(c.tick("_tbnd",void 0,window.external.startE),c.tick("tbnd_","_tbnd",b))),a&&(window.jstiming.pt=a)}catch(g){}})(); })()
+</script>
+<link rel="shortcut icon" type="image/x-icon" href="images/sites-16.ico" />
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png" type="image/png" />
+<script type="text/javascript">/* Copyright 2008 Google. */ (function() { function d(a){return document.getElementById(a)}window.byId=d;function g(a){return a.replace(/^\s+|\s+$/g,"")}window.trim=g;var h=[],k=0;window.JOT_addListener=function(a,b,c){var f=new String(k++);a={eventName:a,handler:b,compId:c,key:f};h.push(a);return f};window.JOT_removeListenerByKey=function(a){for(var b=0;b<h.length;b++)if(h[b].key==a){h.splice(b,1);break}};window.JOT_removeAllListenersForName=function(a){for(var b=0;b<h.length;b++)h[b].eventName==a&&h.splice(b,1)};
+window.JOT_postEvent=function(a,b,c){var f={eventName:a,eventSrc:b||{},payload:c||{}};if(window.JOT_fullyLoaded)for(b=h.length,c=0;c<b&&c<h.length;c++){var e=h[c];e&&e.eventName==a&&(f.listenerCompId=e.compId||"",(e="function"==typeof e.handler?e.handler:window[e.handler])&&e(f))}else window.JOT_delayedEvents.push({eventName:a,eventSrc:b,payload:c})};window.JOT_delayedEvents=[];window.JOT_fullyLoaded=!1;
+window.JOT_formatRelativeToNow=function(a,b){a=((new Date).getTime()-a)/6E4;if(1440<=a||0>a)return null;var c=0;60<=a&&(a/=60,c=2);2<=a&&c++;return b?window.JOT_siteRelTimeStrs[c].replace("__duration__",Math.floor(a)):window.JOT_userRelTimeStrs[c].replace("__duration__",Math.floor(a))}; })()
+</script>
+<script>
+
+  
+
+  var breadcrumbs = [{"path":"/site/n64mods/tutorials-1","deleted":false,"title":"Tutorials","dir":"ltr"},{"path":"/site/n64mods/tutorials-1/-oot-very-basic-hex-editing-guide-for-newbies","deleted":false,"title":"[OoT] Very basic hex editing guide for beginners","dir":"ltr"}];
+  var JOT_clearDotPath = 'images/cleardot.gif';
+
+  
+  var JOT_userRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+  
+  
+
+  
+
+  var webspace = {"gvizGstaticVersion":"current","enableAnalytics":false,"pageSharingId":"jotspot_page","codeembeds":{"outerIframeSrc":"https://www.gstatic.com/jotspot/embeds/code/0f08d42392f2000e7e3f3daf5b427a43/outer_iframe.html","innerIframeSrc":"https://1105292053-jotspot-embeds.googleusercontent.com/code/8d87fa64604b2a11fae2ed06104c58d3/inner_iframe.html"},"enableUniversalAnalytics":false,"sharingPolicy":"OPENED","siteTitle":"N64 Mods","experiments":{"enableSubpagesGadgetInTakeout":true,"overrideDisableDomainEditing":false,"DisableSiteEditingFeature__disable_site_editing":true,"disableDomainEditing":true},"jot2atari":{"eligibility":"INELIGIBLE"},"onepickUrl":"https://docs.google.com/picker","adsensePublisherId":null,"features":{"moreMobileStyleImprovements":null,"subscriptionDataMigrationInProgress":null,"plusBadge":false},"configProperties":{"disableSiteEditing":null},"isPublic":true,"newSitesBaseUrl":"https://sites.google.com","isConsumer":true,"serverFlags":{"jot2AtariLearnMoreUrl":"https://support.google.com/sites/answer/7035197"},"domainAnalyticsAccountId":"","plusPageId":"","signInUrl":"https://accounts.google.com/AccountChooser?continue=https://sites.google.com/site/n64mods/tutorials-1/-oot-very-basic-hex-editing-guide-for-newbies&service=jotspot","analyticsAccountId":"","scottyUrl":"/_/upload","homePath":"/","siteNoticeUrlEnabled":null,"plusPageUrl":"","adsensePromoClickedOrSiteIneligible":true,"csiReportUri":"https://gg.google.com/csi","sharingId":"jotspot","termsUrl":"//www.google.com/intl/en/policies/terms/","gvizVersion":1,"editorResources":{"sitelayout":["https://ssl.gstatic.com/sites/p/65ef77/system/app/css/sitelayouteditor.css"],"text":["https://ssl.gstatic.com/sites/p/65ef77/system/js/codemirror.js","images/codemirror_css.css","images/trog_edit__en.js","images/trogedit.css","images/editor.css","images/codeeditor.css","/site/n64mods/_/rsrc/1639038102000/system/app/css/camelot/editor-jfk.css"]},"sharingUrlPrefix":"/_/sharing","isAdsenseEnabled":true,"domain":"defaultdomain","baseUri":"/site/n64mods","name":"n64mods","siteTemplateId":false,"siteNoticeRevision":null,"siteNoticeUrlAddress":null,"siteNoticeMessage":null,"page":{"isRtlLocale":false,"canDeleteWebspace":null,"isPageDraft":null,"parentPath":"/tutorials-1","parentWuid":"wuid:gx:2e2c96f6afeec25d","siteLocale":"en","timeZone":"America/Los_Angeles","type":"text","title":"[OoT] Very basic hex editing guide for beginners","locale":"en","wuid":"wuid:gx:500490fe3786e6fc","revision":19,"path":"/tutorials-1/-oot-very-basic-hex-editing-guide-for-newbies","isSiteRtlLocale":false,"pageInheritsPermissions":null,"name":"-oot-very-basic-hex-editing-guide-for-newbies","canChangePath":true,"state":"","properties":{},"bidiEnabled":false,"currentTemplate":{"path":"/system/app/pagetemplates/text","title":"Web Page"}},"canPublishScriptToAnyone":true,"user":{"keyboardShortcuts":true,"sessionIndex":"","guest_":true,"displayNameOrEmail":"guest","userName":"guest","uid":"","renderMobile":false,"domain":"","namespace":"","hasWriteAccess":false,"namespaceUser":false,"primaryEmail":"guest","hasAdminAccess":false,"isGoogleAdmin":false},"gadgets":{"baseUri":"/site/n64mods/system/app/pages/gadgets"}};
+  webspace.page.breadcrumbs = breadcrumbs;
+
+  
+  var JOT_siteRelTimeStrs = ["a minute ago","__duration__ minutes ago","an hour ago","__duration__ hours ago"];
+
+</script>
+<script type="text/javascript">
+                window.jstiming.load.tick('scl');
+              </script>
+<meta name="title" content="[OoT] Very basic hex editing guide for beginners - N64 Mods" />
+<meta itemprop="name" content="[OoT] Very basic hex editing guide for beginners - N64 Mods" />
+<meta property="og:title" content="[OoT] Very basic hex editing guide for beginners - N64 Mods" />
+<style type="text/css">
+</style>
+<link rel="stylesheet" type="text/css" href="images/standard-css-iceberg-ltr-ltr.css" />
+<link rel="stylesheet" type="text/css" href="images/overlaya27f.css?cb=iceberg1a150goog-ws-nav-left-noheadnone30themedefaultstandard" />
+<link rel="stylesheet" type="text/css" href="images/allthemes-view.css" />
+<!--[if IE]>
+          <link rel="stylesheet" type="text/css" href="/site/n64mods/system/app/css/camelot/allthemes%2die.css" />
+        <![endif]-->
+<title>[OoT] Very basic hex editing guide for beginners - N64 Mods</title>
+<meta itemprop="image" content="https://sites.google.com/site/n64mods/_/rsrc/1387306543828/tutorials-1/-oot-very-basic-hex-editing-guide-for-newbies/tutorialzelda1.png" />
+<meta property="og:image" content="https://sites.google.com/site/n64mods/_/rsrc/1387306543828/tutorials-1/-oot-very-basic-hex-editing-guide-for-newbies/tutorialzelda1.png" />
+<script type="text/javascript">
+                window.jstiming.load.tick('cl');
+              </script>
+</head>
+<body xmlns="http://www.google.com/ns/jotspot" id="body" class=" en            ">
+<div id="sites-page-toolbar" class="sites-header-divider">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-status" class="sites-status" style="display:none;"><div id="sites-notice" class="sites-notice" role="status" aria-live="assertive"> </div></div>
+</div>
+<div id="sites-chrome-everything-scrollbar">
+<div id="sites-chrome-everything" class="">
+<div id="sites-chrome-page-wrapper" style="direction: ltr">
+<div id="sites-chrome-page-wrapper-inside">
+<div xmlns="http://www.w3.org/1999/xhtml" id="sites-chrome-header-wrapper" style="">
+<table id="sites-chrome-header" class="sites-layout-hbox" cellspacing="0" style="">
+<tr class="sites-header-primary-row" id="sites-chrome-userheader">
+</tr>
+<tr class="sites-header-secondary-row" id="sites-chrome-horizontal-nav">
+<td colspan="2" id="sites-chrome-header-horizontal-nav-container" role="navigation">
+<div class="sites-header-nav"><ul class="sites-header-nav-container-boxes"><li class="unselected"><a class="sites-navigation-link unselected" href="home.html">Home</a></li></ul><div style="clear: both;"></div></div>
+</td>
+</tr>
+</table>
+</div>
+<div id="sites-chrome-main-wrapper">
+<div id="sites-chrome-main-wrapper-inside">
+<table id="sites-chrome-main" class="sites-layout-hbox" cellspacing="0" cellpadding="{scmCellpadding}" border="0">
+<tr>
+<td id="sites-chrome-sidebar-left" class="sites-layout-sidebar-left initial" style="width:150px">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_2bd" class="sites-embed" role="navigation"><div class="sites-embed-content sites-sidebar-nav"><ul role="navigation" jotId="navList" class="has-expander"><li class="topLevel nav-first "><div dir="ltr" style="padding-left: 19px;"><a href="home.html" jotId="wuid:gx:3cec90c8d80be2db" class="sites-navigation-link topLevel">Home</a></div></li><li class="topLevel parent " wuid="gx:fca3e219ddb6945"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="mods.html" jotId="wuid:gx:fca3e219ddb6945" class="sites-navigation-link topLevel">Mods/hacks</a></div><ul role="navigation" class="has-expander"><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="cancelled-projects.html" jotId="wuid:gx:7ff66b59c99cfdfe" class="sites-navigation-link">Cancelled projects</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="finished-mods.html" jotId="wuid:gx:15a173a9e4b30595" class="sites-navigation-link">Finished mods/hacks</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="projects.html" jotId="wuid:gx:81c7d5e5cf38aed" class="sites-navigation-link">Projects</a></div></li></ul></li><li class="topLevel parent " wuid="gx:2e2c96f6afeec25d"><div dir="ltr" style="padding-left: 0px;"><div class="expander"></div><a href="tutorials-1.html" jotId="wuid:gx:2e2c96f6afeec25d" class="sites-navigation-link topLevel">Tutorials</a></div><ul role="navigation" class="has-expander"><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="-mm-importing-custom-map.html" jotId="wuid:gx:3bdc103a69de0352" class="sites-navigation-link">[MM] Importing a custom map</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="-oot-custom-jfif-backgrounds.html" jotId="wuid:gx:10a84c6b4106b35c" class="sites-navigation-link">[OoT] Custom JFIF Backgrounds</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="-oot-making-items-usable-by-adult-young-link.html" jotId="wuid:gx:3bb6e5d5ce1308d5" class="sites-navigation-link">[OoT] Making items usable by adult/young Link</a></div></li><li class=""><div class="current-bg" jotId="wuid:gx:500490fe3786e6fc" dir="ltr" style="padding-left: 38px;">[OoT] Very basic hex editing guide for beginners</div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="importing-maps-from-mm-oot.html" jotId="wuid:gx:5b9033ea10e45443" class="sites-navigation-link">Importing maps from MM (OoT)</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="importing-maps-from-other-n64-games-oot.html" jotId="wuid:gx:5cb27050ca4890b2" class="sites-navigation-link">Importing maps from other N64 games (OoT)</a></div></li><li class=""><div dir="ltr" style="padding-left: 38px;"><a href="uot-actor-replacing-moving.html" jotId="wuid:gx:392af1afc32d5a4c" class="sites-navigation-link">UoT Actor replacing &amp; moving</a></div></li></ul></li><li class="topLevel "><div dir="ltr" style="padding-left: 19px;"><a href="tutorials.html" jotId="wuid:gx:5c8d30675e3f787d" class="sites-navigation-link topLevel">Useful Sites &amp; Software</a></div></li><li class="topLevel "><div dir="ltr" style="padding-left: 19px;"><a href="zelda-gaiden.html" jotId="wuid:gx:220ba6b8dcd5e6c1" class="sites-navigation-link topLevel">Zelda Gaiden and Majora's Mask differences</a></div></li><li class="topLevel "><div dir="ltr" style="padding-left: 19px;"><a href="hierarchy.html" jotId="wuid:gx:566b4dcbe5e71d6c" class="sites-navigation-link topLevel">Sitemap</a></div></li></ul></div></div>
+</td>
+<td id="sites-canvas-wrapper">
+<div id="sites-canvas" role="main">
+<div id="goog-ws-editor-toolbar-container"> </div>
+<div xmlns="http://www.w3.org/1999/xhtml" id="title-crumbs" style="">
+<A href="tutorials-1.html" dir="ltr">Tutorials</A>‎ &gt; ‎
+  </div>
+<h3 xmlns="http://www.w3.org/1999/xhtml" id="sites-page-title-header" style="" align="left">
+<span id="sites-page-title" dir="ltr" tabindex="-1" style="outline: none">[OoT] Very basic hex editing guide for beginners</span>
+</h3>
+<div id="sites-canvas-main" class="sites-canvas-main">
+<div id="sites-canvas-main-content">
+<table xmlns="http://www.w3.org/1999/xhtml" cellspacing="0" class="sites-layout-name-one-column sites-layout-hbox"><tbody><tr><td class="sites-layout-tile sites-tile-name-content-1"><div dir="ltr"><span style="background-color:rgb(255,255,255)"><font size="3"><span style="font-family:Helvetica,Arial,Bitstream Vera Sans,Verdana,sans-serif;line-height:21.309572219848633px">A lot of people seem to think that hex editing is a big deal, but much of it is actually quite simple if you have a bit of knowledge.</span></font></span><div><span style="background-color:rgb(255,255,255)"><font size="3"><br style="font-family:Helvetica,Arial,Bitstream Vera Sans,Verdana,sans-serif;line-height:21.309572219848633px" /><span style="font-family:Helvetica,Arial,Bitstream Vera Sans,Verdana,sans-serif;line-height:21.309572219848633px">Hex editing can be used to modify many things, like import custom models, port display lists and much, much more. Many of these modifications can now be done through different modding software, but there is still a lot stuff that needs some hex editing to do.</span><br style="font-family:Helvetica,Arial,Bitstream Vera Sans,Verdana,sans-serif;line-height:21.309572219848633px" /><br style="font-family:Helvetica,Arial,Bitstream Vera Sans,Verdana,sans-serif;line-height:21.309572219848633px" /><span style="font-family:Helvetica,Arial,Bitstream Vera Sans,Verdana,sans-serif;line-height:21.309572219848633px">A hex editor is “using” the hexadecimal numeral system, which uses the numbers 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E and F where A is equal to 10, B is equal to 11, C is equal to 12, D is equal to 13, E is equal to 14 and F is equal to 15. So basically it is pretty much the same thing as the “normal”(decimal) numeral system, only that the letters A, B, C, D E and F replaces the numbers 10, 11, 12, 13, 14 and 15. After F comes 10, which in hexadecimal is equal to 16. In other words, the hexadecimal numeral system has 16 numbers instead of 10, like the "regular" decimal system most people know.</span><br style="font-family:Helvetica,Arial,Bitstream Vera Sans,Verdana,sans-serif;line-height:21.309572219848633px" /><br style="font-family:Helvetica,Arial,Bitstream Vera Sans,Verdana,sans-serif;line-height:21.309572219848633px" /><span style="font-family:Helvetica,Arial,Bitstream Vera Sans,Verdana,sans-serif;line-height:21.309572219848633px">In this tutorial we will simply be replacing display lists in adult Link’s file with other display lists in his file. To make it easy, let’s replace the Master sword and Hylian shield in-hand display lists with the empty hand display lists. First of you will need to write down the offsets for the display lists we are going to replace. Open up object_link_boy.ZOBJ (or whatever you have named your adult Link file, you can it one <a href="http://www.spinout182.com/mqd/o.html" rel="nofollow">here</a></span></font></span><span style="font-size:medium;font-family:Helvetica,Arial,Bitstream Vera Sans,Verdana,sans-serif;line-height:21.309572219848633px">) in Hylian Toolbox (download </span><a href="http://wiki.maco64.com/Tools/Hylian_Toolbox" rel="nofollow" style="font-size:medium;text-decoration:none;font-family:Helvetica,Arial,Bitstream Vera Sans,Verdana,sans-serif;line-height:21.309572219848633px" target="_blank">here</a><span style="font-size:medium;font-family:Helvetica,Arial,Bitstream Vera Sans,Verdana,sans-serif;line-height:21.309572219848633px">) by going to File&gt;Open Individual and then navigate to the file and open it, now cycle through the display lists by clicking the arrows in the top right corner that are next to the text “No Model”. Though there is no texture rendering in HT, you should be able to see what display list you are viewing. We want to locate his left and right empty hand and also the “low poly” and “high poly” model of his sword and shield. Some models in Link’s file have both “low poly” and “high poly” display lists of their models, the high poly model is shown when Link is close to the camera, and the low poly is when he is far away from it. You will need to replace both.</span></div><div><span style="background-color:rgb(255,255,255)"><font size="3"><br style="font-family:Helvetica,Arial,Bitstream Vera Sans,Verdana,sans-serif;line-height:21.309572219848633px" /><span style="font-family:Helvetica,Arial,Bitstream Vera Sans,Verdana,sans-serif;line-height:21.309572219848633px">When you are viewing a display list you can see that there is a “0x” followed by six digits/letters in the top right corner next to the arrows you use to cycle through them, those are the start offset for the display list you are currently viewing. So if (for example) it would read "0x200000" that would mean that the display starts at offset 0x200000. “0x” basically means that the number displayed is hexadecimal. You will need to write down the start offset for each model that we are replacing, which you can see when viewing the display list in Hylian Toolbox, and that I really hope you understand how to do by now. If you not are able to do this for some reason I will provide a picture below, but then you may not learn much for yourself:</span></font></span></div><div><font face="Helvetica, Arial, Bitstream Vera Sans, Verdana, sans-serif" size="3"><span style="line-height:21.309572219848633px"><br /></span></font>
+<div style="display:block;text-align:left"><a href="images/tutorialzelda1fe83.png?attredirects=0" imageanchor="1"><img border="0" src="images/tutorialzelda1.png" /></a></div><p><span lang="EN-US" style="font-size:12.0pt;line-height:115%"><i>This is how I usually write
+down display list offsets. I don’t care how it looks, what matters is that I
+can understand it.</i></span></p>
+<p><span style="background-color:rgb(255,255,255)"><font size="3"><span style="font-family:Helvetica,Arial,Bitstream Vera Sans,Verdana,sans-serif;line-height:21.309572219848633px">When you have found and documented the start offset for each of the display lists you can close Hylian Toolbox and open up adult Link’s file in the hex editor we are going to use, HxD. You will see a lot of digits and letters once you have opened it. Ignore those and go to Search&gt;Goto (alternatively CTRL + G). This will open a new smaller window, in which you can write in an offset to go to. We will start with replacing the high poly model of the Master Sword with Link’s left hand. If you look on your documentation the offset should be “0x021F78”, that means you will write “021F78” as the offset and then click “OK”. This will take you to a byte (basically two digits) reading E7. From here you will write a “DE command" that basically will tell the game to load another display list.</span><br style="font-family:Helvetica,Arial,Bitstream Vera Sans,Verdana,sans-serif;line-height:21.309572219848633px" /><br style="font-family:Helvetica,Arial,Bitstream Vera Sans,Verdana,sans-serif;line-height:21.309572219848633px" /><span style="font-family:Helvetica,Arial,Bitstream Vera Sans,Verdana,sans-serif;line-height:21.309572219848633px">DE commands are formatted like this:</span><br style="font-family:Helvetica,Arial,Bitstream Vera Sans,Verdana,sans-serif;line-height:21.309572219848633px" /><br style="font-family:Helvetica,Arial,Bitstream Vera Sans,Verdana,sans-serif;line-height:21.309572219848633px" /><span style="font-family:Helvetica,Arial,Bitstream Vera Sans,Verdana,sans-serif;line-height:21.309572219848633px">DE 00 00 00 BB XX XX XX</span><br style="font-family:Helvetica,Arial,Bitstream Vera Sans,Verdana,sans-serif;line-height:21.309572219848633px" /><br style="font-family:Helvetica,Arial,Bitstream Vera Sans,Verdana,sans-serif;line-height:21.309572219848633px" /><span style="font-family:Helvetica,Arial,Bitstream Vera Sans,Verdana,sans-serif;line-height:21.309572219848633px">BB is the "bank" and XX is the offset for the display list that will load instead of the current one. A "bank" is basically what tells the game where the display lists are stored, for instance is bank 06 if it is stored in the same file you are writing the command in and 04 is if it is stored in the "gameplay keep". After the DE command(s) you wanted to write has been written you need to add a "DF command", by simply writing DF 00 00 00 00 00 00 00. A DF command is always located at the end of a display list.</span><br style="font-family:Helvetica,Arial,Bitstream Vera Sans,Verdana,sans-serif;line-height:21.309572219848633px" /><br style="font-family:Helvetica,Arial,Bitstream Vera Sans,Verdana,sans-serif;line-height:21.309572219848633px" /><span style="font-family:Helvetica,Arial,Bitstream Vera Sans,Verdana,sans-serif;line-height:21.309572219848633px">The offset for Link’s left hand is “0x021AA8” and it is stored in bank 06. This means that the DE command you will be writing should be: DE 00 00 00 06 02 1A A8. Simply write that at the offset you were brought to, and don't forget to write a DF commmand after your DE command. If you would want two display lists to load at the same time (for example both his left and right hand display lists) you would simply write one DE command for each of them in a row before adding your DF command. To make sure that you understood this, here is a picture to use as a reference:</span></font></span></p><div style="display:block;text-align:left"><a href="images/tutorialzelda26580.png?attredirects=0" imageanchor="1"><img border="0" src="images/tutorialzelda2.png" /></a></div><span style="font-family:Helvetica,Arial,Bitstream Vera Sans,Verdana,sans-serif;line-height:21.309572219848633px"><div style="color:rgb(173,173,173)"><span style="color:rgb(173,173,173);font-family:Helvetica,Arial,Bitstream Vera Sans,Verdana,sans-serif;line-height:21.309572219848633px;background-color:rgb(255,255,255)"><br /></span></div><span style="background-color:rgb(255,255,255)"><font size="3">So, the full "text" you are going to write at 0x021F78(the high poly model of the Master Sword) is: DE 00 00 00 06 02 1A A8 DF 00 00 00 00 00 00 00</font></span></span><span style="background-color:rgb(255,255,255)"><font size="3"><br style="font-family:Helvetica,Arial,Bitstream Vera Sans,Verdana,sans-serif;line-height:21.309572219848633px" /><span style="font-family:Helvetica,Arial,Bitstream Vera Sans,Verdana,sans-serif;line-height:21.309572219848633px">Now you are going to copy the bytes that you just wrote (the ones that are highlighted in the picture above) and then go to the offset for the low poly model of the Master Sword. When you have gotten there, simply Right Click&gt;Paste write (alternatively CTRL + B). Now you have basically told the game to load the left empty hand display list instead of the Master Sword display lists.</span><br style="font-family:Helvetica,Arial,Bitstream Vera Sans,Verdana,sans-serif;line-height:21.309572219848633px" /><br style="font-family:Helvetica,Arial,Bitstream Vera Sans,Verdana,sans-serif;line-height:21.309572219848633px" /><span style="font-family:Helvetica,Arial,Bitstream Vera Sans,Verdana,sans-serif;line-height:21.309572219848633px">I will not tell you how to do this with the Hylian Shield, so that you can test if you now are able to do it yourself with all the information and instructions I have provided you with through this tutorial. It’s not different at all, just change the display lists numbers in the DE commands to match the shield and right hand models instead of the sword and left hand (and write them at the shield display list offset) .</span><br style="font-family:Helvetica,Arial,Bitstream Vera Sans,Verdana,sans-serif;line-height:21.309572219848633px" /><br style="font-family:Helvetica,Arial,Bitstream Vera Sans,Verdana,sans-serif;line-height:21.309572219848633px" /><span style="font-family:Helvetica,Arial,Bitstream Vera Sans,Verdana,sans-serif;line-height:21.309572219848633px">Now you are going to inject this into the OoT debug ROM. In your modified adult Link file (which still should be open in HxD) Right Click&gt;Select all and then Right Click&gt;Copy. Now open up a OoT debug ROM in HxD as well, and go to the offset 0x00FDC000 (which is the start of adult Link's file in the OoT debug ROM). Here simply Right Click&gt;Paste write. Now save and test!</span></font></span></div><div><span style="background-color:rgb(255,255,255)"><font size="3"><font face="Helvetica, Arial, Bitstream Vera Sans, Verdana, sans-serif"><span style="line-height:21.309572219848633px"><br /></span></font></font></span><div style="display:block;text-align:left"><a href="images/tutorialzelda3919b.png?attredirects=0" imageanchor="1"><img border="0" src="images/tutorialzelda3.png" /></a></div><br />
+<p><span lang="EN-US" style="font-size:12.0pt;line-height:115%">I really hope that you learned
+something from this, and that it did not confuse you. Hex editing is not hard,
+trust me!</span></p><p><i><span lang="EN-US" style="font-size:12.0pt;line-height:115%">(</span><span style="font-family:Helvetica,Arial,Bitstream Vera Sans,Verdana,sans-serif;line-height:21.309572219848633px;background-color:rgb(255,255,255)"><font size="3">Also note that this "method" applies to both Majora's Mask and Ocarina of Time)</font></span></i></p>
+</div></div></td></tr></tbody></table>
+</div> 
+</div> 
+<div id="sites-canvas-bottom-panel">
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-subpages"> </div>
+<div id="sites-attachments-container">
+</div>
+<a xmlns="http://www.w3.org/1999/xhtml" name="page-comments"></a>
+<div xmlns="http://www.w3.org/1999/xhtml" id="COMP_page-comments"><div class="sites-comment-docos-wrapper"><div class="sites-comment-docos"><div class="sites-comment-docos-background"></div><div class="sites-comment-docos-header"><div class="sites-comment-docos-header-title">Comments</div></div><div id="sites-comment-docos-pane" class="sites-comment-docos-pane"></div></div></div></div>
+</div>
+</div> 
+</td> 
+</tr>
+</table> 
+</div> 
+</div> 
+<div id="sites-chrome-footer-wrapper">
+<div id="sites-chrome-footer-wrapper-inside">
+<div id="sites-chrome-footer">
+</div>
+</div>
+</div>
+</div> 
+</div> 
+<div id="sites-chrome-adminfooter-container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sites-adminfooter" role="navigation"><p><a class="sites-system-link" href="https://accounts.google.com/ServiceLogin?continue=https://sites.google.com/site/n64mods/tutorials-1/-oot-very-basic-hex-editing-guide-for-newbies&amp;service=jotspot">Sign in</a><span aria-hidden="true">|</span><a class="sites-system-link" href="recentchanges.html">Recent Site Activity</a><span aria-hidden="true">|</span><a class="sites-system-link" href="reportabuse.html" target="_blank">Report Abuse</a><span aria-hidden="true">|</span><a class="sites-system-link" href="javascript:;" onclick="window.open(webspace.printUrl)">Print Page</a><span aria-hidden="true">|</span><span class="sites-system-link">Powered By</span> <b class="powered-by"><a href="http://sites.google.com/site">Google Sites</a></b></p></div>
+</div>
+</div> 
+</div> 
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('sjl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="images/jot_min_view__en.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    window.jstiming.load.tick('jl');
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml">if (webspace.editorResources['text']) {webspace.editorResources['text'].unshift('#\/site\/n64mods\/system\/app\/css\/overlay.css?cb\x3diceberg1a150goog-ws-nav-left-noheadnone30themedefaultstandard');webspace.editorResources['text'].unshift('#\/site\/n64mods\/_\/rsrc\/1639038102000\/system\/app\/themes\/iceberg\/standard-css-iceberg-ltr-ltr.css');}</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+      gsites.HoverPopupMenu.createSiteDropdownMenus('sites-header-nav-dropdown', false);
+    </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+            JOT_setupNav("2bd", "Navigation", true);
+            JOT_addListener('titleChange', 'JOT_NAVIGATION_titleChange', 'COMP_2bd');
+          </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+              new sites.CommentPane('//docs.google.com/comments/d/AAHRpnXvZ96OgAtmrDShx3wcwne5zNHGiGOBxflPDUiIHFJ7HdXPiVQJutvQ28t9w_lKENR9Tg9oCCze9Kcof3NC65u9jUMm168fcYJxDxrtlrQw-MKWVuBWV26dZ9Hl59U82Y0PUdrtX/api/js?anon=true',
+                  false, false);
+            </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+  setTimeout(function() {
+    var fingerprint = gsites.date.TimeZone.getFingerprint([1109635200000, 1128902400000, 1130657000000, 1143333000000, 1143806400000, 1145000000000, 1146380000000, 1152489600000, 1159800000000, 1159500000000, 1162095000000, 1162075000000, 1162105500000]);
+    gsites.Xhr.send('tz.html', null, null, 'GET', null, null, { afjstz: fingerprint });
+  }, 500);
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml">
+                    window.onload = function() {
+                      if (false) {
+                        JOT_setMobilePreview();
+                      }
+                      var loadTimer = window.jstiming.load;
+                      loadTimer.tick("ol");
+                      loadTimer["name"] = "load," + webspace.page.type + ",user_page";
+                      window.jstiming.report(loadTimer, {}, 'https://gg.google.com/csi');
+                    }
+                  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+        JOT_insertAnalyticsCode(false,
+            false);
+      </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    var maestroRunner = new gsites.pages.view.SitesMaestroRunner(
+        webspace, "en");
+    maestroRunner.initListeners();
+    maestroRunner.installEditRender();
+  </script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript" defer="true">
+  //<![CDATA[
+    // Decorate any fastUI buttons on the page with a class of 'goog-button'.
+    if (webspace.user.hasWriteAccess) {
+      JOT_decorateButtons();
+    }
+
+    // Fires delayed events.
+    (function() {
+      JOT_fullyLoaded = true;
+      var delayedEvents = JOT_delayedEvents;
+      for (var x = 0; x < delayedEvents.length; x++) {
+        var event = delayedEvents[x];
+        JOT_postEvent(event.eventName, event.eventSrc, event.payload);
+      }
+      JOT_delayedEvents = null;
+      JOT_postEvent('pageLoaded');
+    })();
+  //]]>
+</script>
+<script xmlns="http://www.w3.org/1999/xhtml" type="text/javascript">
+    JOT_postEvent('decorateGvizCharts');
+  </script>
+<script type="text/javascript">
+          JOT_setupPostRenderingManager();
+        </script>
+<script type="text/javascript">
+          JOT_postEvent('renderPlus', null, 'sites-chrome-main');
+        </script>
+<script type="text/javascript">
+          sites.codeembed.init();
+        </script>
+<div id="server-timer-div" style="display:none"> </div>
+<script type="text/javascript">
+          window.jstiming.load.tick('render');
+          JOT_postEvent('usercontentrendered', this);
+        </script>
+</body>
+
+<!-- Mirrored from sites.google.com/site/n64mods/tutorials-1/-oot-very-basic-hex-editing-guide-for-newbies by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 22 Dec 2021 23:40:39 GMT -->
+</html>
